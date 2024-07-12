@@ -28,7 +28,30 @@ This project is a sophisticated analysis tool designed for delving into the rich
 
 ### Helper Module (`helper.py`)
 - Contains functions for data processing and analysis, supporting the web application with necessary data manipulation capabilities.
+The Olympic Games data analysis project encompasses several key features designed to analyze and visualize data from the Olympic Games. Here's a summary of its main components and functionalities:
 
+1. **Data Preprocessing**:
+   - Merges athlete events and region data from CSV files.
+   - Filters data for the Summer Olympics.
+   - Removes duplicates and encodes the 'Medal' column into dummy variables for analysis.
+
+2. **Interactive Web Application**:
+   - Utilizes Streamlit for creating an interactive web application.
+   - Offers a sidebar menu for selecting different types of analyses: Medal Tally, Overall Analysis, Country-wise Analysis, and Athlete Wise Analysis.
+
+3. **Data Analysis and Visualization**:
+   - **Medal Tally**: Allows users to view the medal tally for selected countries and years.
+   - **Overall Analysis**: Displays top statistics such as the number of editions, host cities, sports, events, athletes, and participating nations. Includes visualizations for the participation of nations over time, the total number of events, and the total number of athletes.
+   - **Country-wise Analysis**: Provides insights into the medal tally over years for a selected country and visualizes the sports in which the country excels.
+   - **Athlete Wise Analysis**: Analyzes the distribution of athletes' ages, including comparisons based on medal type. Also, visualizes the distribution of athletes' weight and height, and compares male vs. female participation over the years.
+
+4. **Visualization Tools**:
+   - Employs Plotly for line charts and Seaborn for heatmaps to visualize trends, distributions, and other insights.
+
+5. **Helper Functions**:
+   - Contains functions to fetch medal tally, list countries and years, analyze participation over time, identify most successful athletes and countries in specific sports, and more.
+
+This project leverages Python's powerful libraries such as Pandas for data manipulation, Plotly and Seaborn for visualization, and Streamlit for web application development, providing a comprehensive tool for Olympic Games data analysis.
 ## Getting Started
 
 
